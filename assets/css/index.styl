@@ -1,0 +1,272 @@
+@import 'nib'
+
+*
+	box-sizing: border-box
+
+hr
+	background-color:#eee
+	border-width:0
+	color:#eee
+	height:1px
+	line-height:0
+	margin: 0 auto
+	page-break-after:always
+	text-align:center
+	width:80%
+
+#footer
+	text-align: center
+	font-size: 17px
+	font-weight: bold
+	color: maroon
+	text-shadow: 1px 1px 0px rgba(0,0,0,1), -1px -1px rgba(255,255,255,0.2)
+	padding: 20px
+
+body
+	margin: 0
+	padding: 0
+	font-family: Helvetica, sans
+
+h1
+	font-family: alegreya-sc, serif
+	a
+		color: maroon
+		text-decoration: none
+		transition: text-decoration .5s ease-in-out
+	a:hover
+		text-decoration: underline
+
+#epiceditor
+	width: 100%
+	height: 500px
+
+textarea#newpost
+	display: none
+
+#article
+	position: relative
+	top: 10px
+	background: #fafafa url('../img/ricepaper2.png')
+	margin: 0 auto
+	margin-bottom: 40px
+	width: 90%
+	padding: 10px 0px
+	color: #222
+	text-align: justify
+	border-radius: 20px
+	font: 1.5em "Rosario", Georgia-serif
+	text-shadow: 1px 1px 0px #fff
+	.inner
+		width: 60%
+		margin: 0 auto
+		h1
+			font-size: 3em
+		h1, h4, h5
+			text-align: center
+			padding: 0px
+			margin: 5px
+
+		.content
+			padding-top: 40px
+			margin-bottom: 100px
+			code
+				text-shadow: none
+				font-size: 0.7em
+				border-radius: 10px
+				padding: 20px
+
+a.logo
+	font-family: alegreya-sc, serif
+	font-size: 30px
+	color: maroon
+	text-decoration: none
+	font-weight: bold
+	text-shadow: 1px 1px 0px #fff
+
+#content
+	padding-right: 70px
+	text-align: center
+
+#sidebar
+	fixed: top right
+	width: 70px
+	height: 100%
+	background: #222 //url('../img/blackorchid.png')
+	opacity: 0.5
+	padding-left: 7px
+	padding-right: 5px
+	transition: opacity .5s ease-in-out
+	ul
+		margin: 0
+		padding: 0
+		margin-top: 20px
+		margin-bottom: 20px
+		li
+			list-style: none
+			margin-bottom: 15px
+			line-height: 56px
+			li:last-child
+				margin-bottom: 0px
+			a
+				display: block
+				width: 56px
+				font-size: 40px
+				background: #333
+				height: 56px
+				text-align: center
+				color: #222
+				text-decoration: none
+				transition: background .5s ease-in-out, color .5s ease-in-out
+			a:hover
+				background: #ccc
+				color: #111
+#sidebar:hover
+	opacity: 1
+
+form
+	margin: 0 0 20px
+
+fieldset
+	margin: 0
+	padding: 0
+	border: 0
+
+legend
+  display: block
+  width: 100%
+  padding: 0
+  margin-bottom: 20px
+  font-size: (14px * 1.5)
+  line-height: (20px * 2)
+  color: #333
+  border: 0
+  border-bottom: 1px solid #e5e5e5
+
+  small
+    font-size: (20px * .75)
+    color: #999
+
+label
+  display: block
+  margin-bottom: 5px
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block
+  height: 20px
+  padding: 4px 6px
+  margin-bottom: (20px / 2)
+  font-size: 14px
+  line-height: 20px
+  color: gray
+  border-radius: 5px
+  vertical-align: middle
+}
+
+textarea
+	width: 100%
+
+#wrapper
+	width: 100%
+	background: #333 url('../img/navy_blue.png') fixed
+	padding: 20px
+
+	article
+		width: 100%
+		background: rgba(0,0,0,0.1)
+		border-radius: 15px
+		border: 5px solid maroon
+		margin-bottom: 20px
+		overflow: hidden
+		box-shadow: 0px 4px 8px rgba(0,0,0,0.6)
+
+		header
+			h4
+				border: 1px solid darken(maroon, 60%)
+				border-radius: 10px 10px 0px 0px
+				margin-top: 0px
+				margin-bottom: 0px
+				background: linear-gradient(top, maroon, #430000)
+				color: white
+				text-shadow: 1px 1px 0px black
+				padding: 20px
+				font-family: Tahoma, sans
+				box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2)
+				a
+					color: white
+					text-decoration: none
+				a:hover
+					text-decoration: underline
+			p
+				background: #777
+				color: #eee
+				padding: 20px
+				margin-top: 0px
+				margin-bottom: 0px
+				border: 1px solid #555
+				border-top: 1px solid #999
+				text-shadow: 1px 1px 0px #555
+				span.author
+					background: #eee
+					padding: 3px 6px
+					border-radius: 4px
+					color: maroon
+					text-shadow: 1px 1px 0px white
+		#articleBody
+			margin-top: 0px
+			padding: 20px
+			border: 1px solid white
+			text-shadow: 1px 1px 0px white
+		footer
+			height: 100px
+			border: 1px solid darken(maroon, 60%)
+			border-radius: 0px 0px 10px 10px
+			margin-top: 0px
+			margin-bottom: 0px
+			background: linear-gradient(top, maroon, #430000)
+			color: white
+			text-shadow: 1px 1px 0px black
+			padding: 20px
+			font-family: Tahoma, sans
+			line-height: 10px
+			font-size: 20px
+			box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2)
+			width: footerwidth = 100%
+			.views
+				display: inline-block
+				width: ((footerwidth / 3) - 3.33%)
+				text-align: center
+			.comments
+				display: inline-block
+				width: ((footerwidth / 3) - 3.33%)
+				text-align: center
+			.readmore
+				display: inline-block
+				width: ((footerwidth / 3) - 3.33%)
+				text-align: right
+				a
+					color: white
+					text-decoration: none
+					background: none
+					padding: 10px
+					border-radius: 0px 10px 0px 10px
+					box-shadow: 1px 1px 0px rgba(255,255,255,0.1), inset -1px -1px 0px rgba(0,0,0,0.2), inset 1px 1px 0px rgba(255,255,255,0.1)
+					transition: background .5s ease-in-out
+				a:hover
+						background: maroon
+	article:last-child
+		margin-bottom: 0px

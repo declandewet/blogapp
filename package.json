@@ -1,0 +1,20 @@
+{
+  "name": "BlogApp",
+  "version": "0.0.1",
+  "description": "A simple blogging application written in CoffeeScript, using Passport.js for authentication, Mongoose.js for database interaction, Jade as markup and Stylus for styling (with the nib.styl library)",
+  "main": "app.coffee",
+  "dependencies": {
+    "connect-assets": "~2.3.3",
+    "nib": "~0.9.1",
+    "express": "~3.0.6",
+    "moment": "~1.7.2",
+    "stylus": "~0.32.0",
+    "mongoose": "~3.5.4",
+    "jade": "~0.28.1"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.4.0"
+  },
+  "author": "Declan de Wet",
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	each article in articles
+		#article
+			h1
+				a(href="/#{article.url}") #{article.title}
+			hr
+			h4 #{article.author}
+			h5 #{article.formattedDate}
+			hr
+			.content #{article.body}

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	each article in articles
+		#article
+			.inner
+				h1
+					a(href="/#{article.url}") #{article.title}
+				.content
+					!= article.body

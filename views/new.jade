@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	#article
+		.inner
+			form(method="post", id="newpostform")
+				fieldset
+					legend #{title}
+					br
+					label Title
+					br
+					input(type="text", name="title")
+					br
+					label Author
+					br
+					input(type="text", name="author")
+					br
+					label Body
+					br
+					#epiceditor
+					textarea#newpost(name="body")
+					br
+					input(type="submit", value="Submit")

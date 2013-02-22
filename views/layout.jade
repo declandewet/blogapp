@@ -1,0 +1,58 @@
+!!! 5
+html
+	head
+		title #{title}
+		!= css('index')
+		!= css('lefont')
+		!= css('lefont-codes')
+		!= css('lefont-embedded')
+		!= css('monokai')
+		!= js('highlight.pack')
+		script(src="http://use.edgefonts.net/alegreya-sc.js")
+		script(src="http://use.edgefonts.net/rosario.js")
+	body
+		#wrapper
+			#content
+				block content
+				#footer
+					p Copyright &copy; #{new Date().getFullYear()} CodeBarren
+		#sidebar
+			ul
+				li
+					a(href='/')
+						i.icon-home
+				li
+					a(href='#')
+						i.icon-search
+				li
+					a(href='#')
+						i.icon-article-alt-1
+				li
+					a(href='#')
+						i.icon-twitter
+				li
+					a(href='#')
+						i.icon-facebook
+				li
+					a(href='#')
+						i.icon-digg
+				li
+					a(href='#')
+						i.icon-stumbleupon
+				li
+					a(href='#')
+						i.icon-rss
+				li
+					a(href='#')
+						i.icon-email
+		!= js('components/jquery/jquery.min')
+		script(src='epiceditor/js/epiceditor.js')
+		script
+			hljs.initHighlightingOnLoad();
+			var opts = {
+				textarea: 'newpost',
+				clientSideStorage: false,
+				useNativeFullscreen: false
+			};
+			var editor = new EpicEditor(opts);
+			editor.load();
