@@ -4,7 +4,7 @@
   "description": "A simple blogging application written in CoffeeScript, using Passport.js for authentication, Mongoose.js for database interaction, Jade as markup and Stylus for styling (with the nib.styl library)",
   "main": "app.coffee",
   "dependencies": {
-    "connect-assets": "~5.4.0",
+    "connect-assets": "~6.0.1",
     "nib": "~1.1.2",
     "express": "~4.14.0",
     "moment": "~2.17.0",
